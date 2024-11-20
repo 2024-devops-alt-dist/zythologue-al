@@ -1,8 +1,8 @@
-* Installation du projet
+# Installation du projet
 
 Installation:
-    DBeaver
-    Docker
+* [DBeaver](https://dbeaver.io/)
+* [Docker](https://www.docker.com/)
 
 Cloner le projet, puis ouvrir un terminal et exécuter la commande suivante à la racine:
 ```
@@ -11,7 +11,7 @@ docker compose up
 
 Ouvrir DBeaver etl'aide des variables définis dans le fichier de configuration docker-compose.yaml (POSTGRES_USER, POSTGRES_PASSWORD et POSTGRES_DB) créer une nouvelle connexion.
 
-* Requêtes SQL
+# Requêtes SQL
 
 Lister les bières par taux d'alcool, de la plus légère à la plus forte.
 ```
