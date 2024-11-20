@@ -1,5 +1,5 @@
 
-insert into users (email, password, username, firstname, lastname) values
+INSERT INTO users (email, password, username, firstname, lastname) VALUES
   ('lucas.martin@example.com', 'md5password123', 'lucas_martin', 'Lucas', 'Martin'),
   ('sophie.dupuis@example.com', 'md5password234', 'sophie_dupuis', 'Sophie', 'Dupuis'),
   ('tom.dubois@example.com', 'md5password345', 'tom_dubois', 'Tom', 'Dubois'),
@@ -22,7 +22,7 @@ insert into users (email, password, username, firstname, lastname) values
   ('alice.smith@example.com', 'hashed_password_456', 'alicesmith', 'Alice', 'Smith');
 
 
-insert into brewery (name, address, country, description, link, email) values
+INSERT INTO brewery (name, address, country, description, link, email) VALUES
   ('Brasserie Dupont', 'Rue de l''Industrie, 10, 7340 Pipaix', 'Belgique', 'Brasserie belge traditionnelle, célèbre pour sa saison Dupont.', 'https://www.brasseriedupont.com', 'contact@brasseriedupont.com'),
   ('Stone Brewing', '1999 Citracado Parkway, Escondido, CA 92029', 'États-Unis', 'Brasserie californienne connue pour ses bières IPA audacieuses.', 'https://www.stonebrewing.com', 'contact@stonebrewing.com'),
   ('Zennebier', 'Boulevard des Sports 12, 1000 Bruxelles', 'Belgique', 'Brasserie artisanale bruxelloise spécialisée dans les bières locales.', 'https://www.zennebier.be', 'info@zennebier.be'),
@@ -44,7 +44,7 @@ insert into brewery (name, address, country, description, link, email) values
   ('Brasserie d''Orval', 'Orval, 6823 Villers-devant-Orval', 'Belgique', 'Brasserie trappiste belge, célèbre pour sa bière Orval.', 'https://www.orval.be', 'info@orval.be'),
   ('Brasserie des Sources', '32 Rue de la Gare, 08440 Les Mazures', 'France', 'Brasserie artisanale française produisant des bières locales de qualité.', 'https://www.brasseriedessources.fr', 'contact@brasseriedessources.fr');
 
-insert into category (name, description) values
+INSERT INTO category (name, description) VALUES
   ('Lager', 'Bière fermentée à basse température, légère et rafraîchissante.'),
   ('IPA', 'Bière riche en houblon avec des arômes floraux et fruités, souvent amère.'),
   ('Stout', 'Bière foncée aux arômes de café et chocolat, souvent crémeuse et riche.'),
@@ -61,7 +61,7 @@ insert into category (name, description) values
   ('Saison', 'Bière rustique de fermentation haute, avec des notes épicées et légèrement acidulées.'),
   ('Cider', 'Boisson fermentée à base de pommes, souvent légère et sucrée.');
 
-insert into beer (brewery_id, category_id, name, description, abv, ibu) values 
+INSERT INTO beer (brewery_id, category_id, name, description, abv, ibu) VALUES 
   (1, 2, 'Duvel', 'Bière belge blonde et forte, avec une amertume légère et un goût fruité.', 8.5, 35),
   (2, 4, 'Stone IPA', 'IPA houblonnée, amère, avec des arômes de pamplemousse et d''agrumes.', 7.0, 70),
   (3, 7, 'Zennebier', 'Bière belge de style saison, légèrement épicée avec des notes de fruits.', 6.0, 30),
@@ -103,7 +103,7 @@ insert into beer (brewery_id, category_id, name, description, abv, ibu) values
   (9, 6, 'Citrus Wheat', 'Bière de blé aux arômes d''agrumes, avec une touche de coriandre.', 4.3, 25),
   (9, 3, 'Black Forest Stout', 'Stout riche avec des saveurs de chocolat, cerises et café grillé.', 7.5, 50);
 
-insert into photo (beer_id, url) values
+INSERT INTO photo (beer_id, url) VALUES
   (1, 'https://example.com/photos/duvel.jpg'),
   (2, 'https://example.com/photos/stone_ipa.jpg'),
   (3, 'https://example.com/photos/zennebier.jpg'),
@@ -125,7 +125,7 @@ insert into photo (beer_id, url) values
   (19, 'https://example.com/photos/chouette_blanche.jpg'),
   (20, 'https://example.com/photos/kernel_ipa.jpg');
 
-insert into favorite (user_id, beer_id) values
+INSERT INTO favorite (user_id, beer_id) VALUES
 (1, 5),
 (2, 3),
 (3, 8),
@@ -156,7 +156,7 @@ insert into favorite (user_id, beer_id) values
 (8, 13),
 (9, 5);
 
-insert into review (user_id, beer_id, rate, comment) values
+INSERT INTO review (user_id, beer_id, rate, comment) VALUES
   (1, 5, 5, 'Une bière complexe et délicieuse, j''adore la richesse de ses arômes.'),
   (2, 7, 4, 'Excellente IPA, un peu amère mais bien équilibrée.'),
   (3, 3, 3, 'Bon goût de fruits mais manque de corps.'),
@@ -179,7 +179,7 @@ insert into review (user_id, beer_id, rate, comment) values
   (20, 6, 4, 'Bonne saison, agréable mais pas exceptionnelle.');
 
 
-insert into ingredient (name) values
+INSERT INTO ingredient (name) VALUES
 ('Houblon'),
 ('Malt'),
 ('Levure'),
@@ -196,7 +196,7 @@ insert into ingredient (name) values
 ('Banane'),
 ('Orge');
 
-insert into beer_ingredient (beer_id, ingredient_id) values
+INSERT INTO beer_ingredient (beer_id, ingredient_id) VALUES
 (1, 1),
 (1, 2),
 (1, 3),
